@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "561667130364",
-    "firebase_url": "https://feba-radio-f969a.firebaseio.com",
-    "project_id": "feba-radio-f969a",
-    "storage_bucket": "feba-radio-f969a.appspot.com"
+    "project_number": "794426823552",
+    "firebase_url": "https://feba-radio-5446d.firebaseio.com",
+    "project_id": "feba-radio-5446d",
+    "storage_bucket": "feba-radio-5446d.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:561667130364:android:2f801311ef9e5e393be879",
+        "mobilesdk_app_id": "1:794426823552:android:8b857c6ee5e7687be1a765",
         "android_client_info": {
           "package_name": "com.FEBA.FebaRadio"
         }
       },
       "oauth_client": [
         {
-          "client_id": "561667130364-4n5lpp0fdm19eej5em8gfp1g5h21sbk5.apps.googleusercontent.com",
+          "client_id": "794426823552-q9ppv9iv7gmsjrihcdlqdaga9mj2chiu.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyC1G-ODfjyBR3kE_3NY44_z31L4xItie6w"
+          "current_key": "AIzaSyAeq-MvmLlUrnGsX-G36JijOxgigTb8M9g"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "561667130364-4n5lpp0fdm19eej5em8gfp1g5h21sbk5.apps.googleusercontent.com",
+              "client_id": "794426823552-q9ppv9iv7gmsjrihcdlqdaga9mj2chiu.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
