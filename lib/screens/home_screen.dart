@@ -101,12 +101,14 @@ class _MyAppHomePageState extends State<MyAppHomePage>
     }
   }
 
+  Timer timer;
+
   @override
   Widget build(BuildContext context) {
     final deviceWidth = MediaQuery.of(context).size.width;
     final deviceHeight = MediaQuery.of(context).size.height;
 
-    Timer timer = Timer.periodic(Duration(milliseconds: 2500), (timer) {
+    timer = Timer.periodic(Duration(milliseconds: 2500), (timer) {
       if (timer != null) {
         timer.cancel();
       }
@@ -212,11 +214,13 @@ class _MyAppHomePageState extends State<MyAppHomePage>
             children: <Widget>[
               SizedBox(height: deviceHeight * 0.2),
               const SizedBox(height: 5),
-              RaisedButton(
-                splashColor: Colors.indigo[300],
-                color: Colors.white70,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(18.0),
+              ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  primary: Colors.white70,
+                  onPrimary: Colors.indigo,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(18.0),
+                  ),
                 ),
                 onPressed: () {
                   timer.cancel();
@@ -230,7 +234,8 @@ class _MyAppHomePageState extends State<MyAppHomePage>
                     'LIVE RADIO',
                     softWrap: true,
                     textAlign: TextAlign.center,
-                    style: TextStyle(fontSize: deviceHeight * 0.03),
+                    style: TextStyle(
+                        fontSize: deviceHeight * 0.03, color: Colors.black),
                   ),
                 ),
               ),
@@ -239,13 +244,12 @@ class _MyAppHomePageState extends State<MyAppHomePage>
               const MainButtons(
                   'STORIES', 'https://febaradio.co.za/category/stories'),
               const MainButtons(
-                  'PRAYER FOCUS', 'https://febaradio.co.za/prayer.html'),
+                  'PRAYER FOCUS', 'https://febaradio.co.za/prayer-calendar/'),
+              const MainButtons('ABOUT US', 'https://febaradio.co.za/mission/'),
               const MainButtons(
-                  'ABOUT US', 'https://febaradio.co.za/mission.html'),
+                  'CONTACT US', 'https://febaradio.co.za/contact-us/'),
               const MainButtons(
-                  'CONTACT US', 'https://febaradio.co.za/contact.html'),
-              const MainButtons('SUPPORT OUR WORK/DONATE',
-                  'https://febaradio.co.za/partner.html'),
+                  'SUPPORT OUR WORK/DONATE', 'https://febaradio.co.za/donate/'),
             ],
           ),
         ],

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-import '../screens/stations.dart';
 import '../widgets/radio.dart';
+import '../screens/stations.dart';
 import '../widgets/radio_background_image.dart';
 
-class PhilippinesScreen extends StatelessWidget {
-  static const routeName = '/philippines-screen';
+class IndiaScreen extends StatelessWidget {
+  static const routeName = '/india-screen';
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +17,7 @@ class PhilippinesScreen extends StatelessWidget {
             icon: Icon(Icons.arrow_back),
             onPressed: () => Navigator.pop(context),
           ),
-          title: Text("Philippines Station"),
+          title: Text("India Station"),
           centerTitle: true,
         ),
         body: Stack(
@@ -39,8 +39,7 @@ class PhilippinesScreen extends StatelessWidget {
                   ),
                 ),
                 Center(
-                  child:
-                      RadioWidget(Stations.philippinesStation, "Philippines"),
+                  child: RadioWidget(Stations.indiaStation, "India"),
                 ),
               ],
             ),

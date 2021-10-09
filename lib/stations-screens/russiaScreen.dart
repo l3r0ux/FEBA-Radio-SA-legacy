@@ -15,8 +15,7 @@ class RussiaScreen extends StatelessWidget {
         appBar: AppBar(
           leading: IconButton(
             icon: Icon(Icons.arrow_back),
-            onPressed: () =>
-                Navigator.pushReplacementNamed(context, Stations.routeName),
+            onPressed: () => Navigator.pop(context),
           ),
           title: Text("Russia Station"),
           centerTitle: true,

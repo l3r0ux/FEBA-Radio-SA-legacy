@@ -1,4 +1,4 @@
-import 'package:FebaRadio/widgets/grid_tile.dart';
+import 'package:feba_radio/widgets/grid_tile.dart';
 import 'package:flutter/material.dart';
 
 import '../screens/home_screen.dart';
@@ -8,10 +8,12 @@ import '../stations-screens/russiaScreen.dart';
 import '../stations-screens/philippinesScreen.dart';
 import '../stations-screens/koreaScreen.dart';
 import '../stations-screens/mongoliaScreen.dart';
+import '../stations-screens/indiaScreen.dart';
 
 class Stations extends StatelessWidget {
   static const routeName = '/stations';
 
+  static const indiaStation = "https://stream.radio.co/s383f50ab3/listen";
   static const cambodiaStation = "http://s14.myradiostream.com:10064/;";
   static const russiaStation = "http://stream.teos.fm:8004/mp3_hq";
   static const mongoliaStation = "http://c4.radioboss.fm/stream/87";
@@ -25,15 +27,15 @@ class Stations extends StatelessWidget {
   Widget build(BuildContext context) {
     return WillPopScope(
       onWillPop: () async {
-        Navigator.pushReplacementNamed(context, MyAppHomePage.routeName);
+        Navigator.popAndPushNamed(context, MyAppHomePage.routeName);
         return false;
       },
       child: Scaffold(
         appBar: AppBar(
           leading: IconButton(
             icon: Icon(Icons.arrow_back),
-            onPressed: () => Navigator.pushReplacementNamed(
-                context, MyAppHomePage.routeName),
+            onPressed: () =>
+                Navigator.popAndPushNamed(context, MyAppHomePage.routeName),
           ),
           title: Text(
             "Choose a Station:",
@@ -63,6 +65,8 @@ class Stations extends StatelessWidget {
                 mainAxisSpacing: 15,
               ),
               children: <Widget>[
+                const RadioCountry(IndiaScreen.routeName,
+                    'assets/images/india_flag.PNG', 'India Station'),
                 const RadioCountry(CambodiaScreen.routeName,
                     'assets/images/cambodia_flag.PNG', 'Cambodia Station'),
                 const RadioCountry(ChinaScreen.routeName,

@@ -35,7 +35,7 @@ class _RadioWidgetState extends State<RadioWidget> {
 
   @override
   Widget build(BuildContext context) {
-    return FlatButton(
+    return TextButton(
       child: isPlaying
           ? Image.asset(
               'assets/images/play.PNG',

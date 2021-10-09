@@ -9,6 +9,7 @@ import './stations-screens/koreaScreen.dart';
 import './stations-screens/mongoliaScreen.dart';
 import './stations-screens/philippinesScreen.dart';
 import './stations-screens/russiaScreen.dart';
+import './stations-screens/indiaScreen.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -30,6 +31,7 @@ class MyApp extends StatelessWidget {
       routes: {
         MyAppHomePage.routeName: (ctx) => MyAppHomePage(),
         Stations.routeName: (ctx) => Stations(),
+        IndiaScreen.routeName: (ctx) => IndiaScreen(),
         ChinaScreen.routeName: (ctx) => ChinaScreen(),
         CambodiaScreen.routeName: (ctx) => CambodiaScreen(),
         KoreaScreen.routeName: (ctx) => KoreaScreen(),
@@ -43,3 +45,5 @@ class MyApp extends StatelessWidget {
 
 // CHECK THIS TO LEARN HOW TO MAKE CIRCLES
 // https://blog.codemagic.io/flutter-custom-painter/
+
+// to create appbudle, run 'flutter build appbundle'
