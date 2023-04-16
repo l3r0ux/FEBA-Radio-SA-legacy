@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
 
-import 'package:flutter_radio/flutter_radio.dart';
+// import 'package:flutter_radio/flutter_radio.dart';
 
 class RadioWidget extends StatefulWidget {
   final String url;
@@ -24,12 +24,12 @@ class _RadioWidgetState extends State<RadioWidget> {
   }
 
   Future<void> audioStart() async {
-    await FlutterRadio.audioStart();
+    // await FlutterRadio.audioStart();
   }
 
   Future<void> playingStatus() async {
-    bool isP = await FlutterRadio.isPlaying();
-    isPlaying = isP;
+    // bool isP = await FlutterRadio.isPlaying();
+    // isPlaying = isP;
     setState(() {});
   }
 
@@ -48,9 +48,9 @@ class _RadioWidgetState extends State<RadioWidget> {
       onPressed: () async {
         await playingStatus();
         if (!isPlaying) {
-          FlutterRadio.play(url: widget.url);
+          // FlutterRadio.play(url: widget.url);
         } else {
-          FlutterRadio.stop();
+          // FlutterRadio.stop();
         }
       },
     );

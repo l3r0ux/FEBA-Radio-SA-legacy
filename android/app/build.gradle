@@ -33,7 +33,7 @@ def keystoreProperties = new Properties()
    }
 
    android {
-    compileSdkVersion 28
+    compileSdkVersion 32
     buildToolsVersion "31.0.0"
 
     sourceSets {

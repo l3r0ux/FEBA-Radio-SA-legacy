@@ -216,36 +216,36 @@ class _MyAppHomePageState extends State<MyAppHomePage>
               const SizedBox(height: 5),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  primary: Colors.white70,
-                  onPrimary: Colors.indigo,
+                  backgroundColor: Colors.white70,
+                  foregroundColor: Colors.indigo,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(18.0),
                   ),
                 ),
-                onPressed: () {
-                  timer.cancel();
-                  _controller.dispose();
-                  Navigator.of(context)
-                      .pushReplacementNamed(Stations.routeName);
-                },
+                onPressed: null,
+                // onPressed: () {
+                // timer.cancel();
+                // _controller.dispose();
+                // Navigator.of(context)
+                //     .pushReplacementNamed(Stations.routeName);
+                // },
                 child: Container(
                   width: deviceWidth * 0.5,
                   child: Text(
-                    'LIVE RADIO',
+                    'LIVE RADIO (Under Maintainance)',
                     softWrap: true,
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                        fontSize: deviceHeight * 0.03, color: Colors.black),
+                        fontSize: deviceHeight * 0.02, color: Colors.black),
                   ),
                 ),
               ),
               const MainButtons(
-                  'NEWS', 'https://febaradio.co.za/category/news'),
+                  'STORIES', 'https://febaradio.co.za/stories-2/'),
               const MainButtons(
-                  'STORIES', 'https://febaradio.co.za/category/stories'),
+                  'PRAYER FOCUS', 'https://febaradio.co.za/prayer/'),
               const MainButtons(
-                  'PRAYER FOCUS', 'https://febaradio.co.za/prayer-calendar/'),
-              const MainButtons('ABOUT US', 'https://febaradio.co.za/mission/'),
+                  'ABOUT US', 'https://febaradio.co.za/about-us/'),
               const MainButtons(
                   'CONTACT US', 'https://febaradio.co.za/contact-us/'),
               const MainButtons(

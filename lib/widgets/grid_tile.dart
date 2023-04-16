@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_radio/flutter_radio.dart';
+// import 'package:flutter_radio/flutter_radio.dart';
 
 class RadioCountry extends StatelessWidget {
   final String routeName;
@@ -16,7 +16,7 @@ class RadioCountry extends StatelessWidget {
         child: GestureDetector(
           onTap: () {
             Navigator.of(context).pushNamed(routeName).then((context) {
-              FlutterRadio.stop();
+              // FlutterRadio.stop();
             });
           },
           child: Image.asset(
